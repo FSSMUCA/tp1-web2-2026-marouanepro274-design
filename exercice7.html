@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice X</h1>
+    <h1> Calculatrice de cercle</h1>
+    <div id="rayon"></div>
+    <div id="perimetre"></div>
+    <div id="surface"></div>
+
+    <script>
+    
+ const PI = Math.PI;
+
+let rayon = window.prompt("Saisir le rayon du cerle")
+
+ let rayon_ = Number(rayon)
+
+ let perimetre = 2 * PI * rayon_
+
+ let surface = PI * rayon * rayon
+
+ console.log(document.getElementById("rayon").innerHTML =  `${rayon_}`+ "cm")
+ console.log(document.getElementById("perimetre").innerHTML =  `${perimetre.toFixed(2)}`+ "cm")
+ console.log(document.getElementById("surface").innerHTML =  `${surface.toFixed(2)}`+ "cm²")
+
+    </script>
+  </body>
+</html>
